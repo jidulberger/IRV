@@ -70,7 +70,7 @@ drv <- dbDriver("PostgreSQL")
 
 #Connect to local postges db estimize
 ## create a connection to a PostgreSQL server
-covid <- dbConnect(drv, user="joshd", password="zx5vrzXrBvZVqc4r",
+covid <- dbConnect(drv, user="", password="",
                    dbname="covid_dwh", host="covid-dwh.cjzjn92qszxx.us-east-1.rds.amazonaws.com")
 
 co_muni<- dbGetQuery(covid, "SELECT DISTINCT municipality, county, concat(municipality, ' ', state) muni_state
